@@ -22,10 +22,6 @@ jobs:
         working-directory: apps/frontend
         run: npm ci
 
-      - name: Build FE
-        working-directory: apps/frontend
-        run: npm run build
-
       - name: Start FE server
         working-directory: apps/frontend
         run: npm start &
