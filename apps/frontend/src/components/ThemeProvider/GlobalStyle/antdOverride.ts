@@ -64,7 +64,6 @@ export default (token: Theme) => {
       background: ${rgba(token.colorBgMask, 0.1)};
       border-radius: ${token.borderRadiusLG}px;
 
-      ${token.stylish.blur};
     }
 
     .${token.prefixCls}-popover-inner,

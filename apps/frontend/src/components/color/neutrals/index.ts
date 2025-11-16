@@ -1,4 +1,4 @@
-import type { ColorScaleItem } from '@/color/types';
+import type { ColorScaleItem } from '@/components/color/types';
 
 import mauve from './mauve';
 import olive from './olive';

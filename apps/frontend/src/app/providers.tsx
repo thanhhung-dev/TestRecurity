@@ -9,8 +9,7 @@ export function Providers({ children }: { children: ReactNode }) {
       <AuthProvider>
         <ThemeProvider
           customTheme={{
-            primaryColor: "#000000",
-            neutralColor: "#18191c",
+            primaryColor: "geekblue", // dùng 1 màu hợp lệ
           }}
           enableCustomFonts={true}
           enableGlobalStyle={true}
