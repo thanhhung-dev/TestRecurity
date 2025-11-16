@@ -1,0 +1,30 @@
+name: Cypress Tests
+
+# Chạy workflow khi có push hoặc pull request
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20  # hoặc version Node bạn đang dùng
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Cypress tests
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        run: npx cypress run --record --key $CYPRESS_RECORD_KEY
