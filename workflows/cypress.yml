@@ -1,6 +1,5 @@
 name: Cypress Tests
 
-# Chạy workflow khi có push hoặc pull request
 on:
   push:
     branches:
@@ -19,12 +18,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20  # hoặc version Node bạn đang dùng
+          node-version: 20
 
       - name: Install dependencies
+        working-directory: apps/frontend
         run: npm ci
 
       - name: Run Cypress tests
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-        run: npx cypress run --record --key $CYPRESS_RECORD_KEY
+        working-directory: apps/frontend
+        run: npx cypress run --record --key 7db637dc-085d-42e6-8317-8d70a957ff69
