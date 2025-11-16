@@ -1,0 +1,60 @@
+{
+  "validCredentials": {
+    "email": "testuser@example.com",
+    "password": "Testpass123@"
+  },
+  "invalidCredentials": [
+    {
+      "email": "wrong@example.com",
+      "password": "wrongpass",
+      "description": "Wrong credentials"
+    },
+    {
+      "email": "nonexistent@test.com",
+      "password": "testpass123",
+      "description": "Nonexistent user"
+    },
+    {
+      "email": "testuser1@example.com",
+      "password": "Testpass123@",
+      "description": "Deactivated account"
+    }
+  ],
+  "boundaryData": {
+    "emptyEmail": "",
+    "shortEmail": "ab",
+    "invalidEmail": "abc",
+    "longEmail": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+    "emptyPassword": "",
+    "shortPassword": "12345",
+    "validMinPassword": "123456",
+    "passwordWithSpace": "pass word",
+    "specialCharsPassword": "!@#$%^&*()"
+  },
+  "sqlInjection": {
+    "email": "admin'OR'1'='1@test.com",
+    "password": "password"
+  },
+  "xssAttempt": {
+    "email": "<script>alert('xss')</script>@test.com",
+    "password": "password"
+  },
+  "urls": {
+    "login": "http://localhost:3000/login",
+    "home": "http://localhost:3000/",
+    "register": "http://localhost:3000/register"
+  },
+  "selectors": {
+    "emailInput": "[data-testid=\"email-input\"]",
+    "passwordInput": "[data-testid=\"password-input\"]",
+    "submitButton": "button[type=\"submit\"]",
+    "errorAlert": ".ant-alert-error",
+    "successAlert": ".ant-alert-success",
+    "errorMessage": ".ant-alert-message",
+    "fieldError": ".ant-form-item-explain-error",
+    "forgotPasswordLink": "a:contains(\"Forgot Password\")",
+    "createAccountLink": "a:contains(\"Create Account\")",
+    "backToHomeButton": "button:contains(\"Back to home\")",
+    "passwordVisibilityIcon": ".anticon-eye, .anticon-eye-invisible"
+  }
+}

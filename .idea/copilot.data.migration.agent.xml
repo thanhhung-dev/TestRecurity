@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AgentMigrationStateService">
+    <option name="pendingSessionIds">
+      <option value="4794183a-55dd-4907-8f54-16d77e2669cd" />
+      <option value="5bae454b-385e-404b-972f-4637ebabfeb8" />
+    </option>
+    <option name="pendingTurns">
+      <map>
+        <entry key="4794183a-55dd-4907-8f54-16d77e2669cd">
+          <value>
+            <set>
+              <option value="72ab7ce9-3112-4458-b4f6-effd31ba286c" />
+              <option value="1d85f89b-34d2-4893-9dcd-cb14012c2715" />
+              <option value="ec925b66-6331-469b-8cb0-d73523f32fa8" />
+            </set>
+          </value>
+        </entry>
+        <entry key="5bae454b-385e-404b-972f-4637ebabfeb8">
+          <value>
+            <set>
+              <option value="230c3749-0490-450c-8d36-197941efc802" />
+              <option value="d1e37d6b-3049-487d-82d1-eb3c87dbfab3" />
+              <option value="878f2b77-63c0-4784-8494-cd948b92c92e" />
+              <option value="05150f20-3b9d-4a30-ac2f-7a72433095fb" />
+              <option value="b5765c9d-d732-4bec-8a7a-194000aa0b85" />
+              <option value="97fae815-51c7-41cb-a719-dc26f937b8d6" />
+              <option value="ac7ff49a-c335-46e9-8b7c-c127c329506b" />
+              <option value="1126ac36-fd16-4586-9171-599102e8a609" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <pendingWorkingSetItems>
+      <entry key="4794183a-55dd-4907-8f54-16d77e2669cd">
+        <set>
+          <option value="file://$PROJECT_DIR$/apps/frontend/src/features/auth/LoginForm.tsx" />
+          <option value="file://$PROJECT_DIR$/apps/frontend/src/features/auth/RegisterForm.tsx" />
+        </set>
+      </entry>
+      <entry key="5bae454b-385e-404b-972f-4637ebabfeb8">
+        <set>
+          <option value="file://$PROJECT_DIR$/apps/frontend/src/features/auth/LoginForm.tsx" />
+          <option value="file://$PROJECT_DIR$/apps/frontend/src/features/auth/Register.tsx" />
+        </set>
+      </entry>
+    </pendingWorkingSetItems>
+    <option name="migrationStatus" value="COMPLETED" />
+  </component>
+</project>
