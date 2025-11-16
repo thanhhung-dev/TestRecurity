@@ -22,6 +22,10 @@ jobs:
         working-directory: apps/frontend
         run: npm ci
 
+      - name: Build FE
+        working-directory: apps/frontend
+        run: npm run build
+
       - name: Start FE server
         working-directory: apps/frontend
         run: npm start &
@@ -31,4 +35,4 @@ jobs:
 
       - name: Run Cypress tests
         working-directory: apps/frontend
-        run: npx cypress run --record --key $CYPRESS_RECORD_KEY
+        run: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
